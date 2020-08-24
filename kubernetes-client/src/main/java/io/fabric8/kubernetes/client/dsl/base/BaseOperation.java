@@ -177,7 +177,6 @@ public class BaseOperation<T extends HasMetadata, L extends KubernetesResourceLi
       throw KubernetesClientException.launderThrowable(forOperationType("list"), e);
     }
 
-
     // catch (InterruptedException | ExecutionException | IOException e) {
       // throw KubernetesClientException.launderThrowable(forOperationType("list"), e);
      // }
