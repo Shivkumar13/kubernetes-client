@@ -61,6 +61,6 @@ public class NetworkPolicyExample {
                                     .inNamespace(namespace)
                                     .load(NetworkPolicyExample.class.getResourceAsStream("/network-policy.yml"))
                                     .createOrReplace();
-
+    client.close();
   }
 }

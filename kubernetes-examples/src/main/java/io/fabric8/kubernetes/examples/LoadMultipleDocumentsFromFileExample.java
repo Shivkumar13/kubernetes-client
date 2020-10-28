@@ -56,6 +56,7 @@ public class LoadMultipleDocumentsFromFileExample {
     for (HasMetadata meta : list) {
       System.out.println(display(meta));
     }
+    client.close();
   }
 
   private static String display(HasMetadata item) {

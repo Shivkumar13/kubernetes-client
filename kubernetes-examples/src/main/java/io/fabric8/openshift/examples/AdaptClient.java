@@ -25,5 +25,6 @@ public class AdaptClient {
     KubernetesClient client = new DefaultKubernetesClient();
     OpenShiftClient oclient = client.adapt(OpenShiftClient.class);
     System.out.println("Adapted to an openshift client: " + oclient);
+    client.close();
   }
 }
